@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+/* Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;margin:0;padding:0;}fieldset{display:block; border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;}
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	overflow:auto;
+	background:url(../images/bg.jpg) no-repeat center center;
+	background-size:cover;
+	background-attachment:fixed;
+	text-align:center;
+	color:#272727;
+	font-family:'DIN-Regular';
+}
+
+a{
+	text-decoration:none;
+}
+a:hover{
+	
+}
+
+p{
+	
+}
+
+b{
+	font-family:'DIN-Bold';
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family:'soup_of_justice';
+	color:#f7bc14;
+	font-size:36px;
+	margin:0 0 15px;
+}
+
+img{
+	max-width:100%;
+}
+
+.logo{
+	display:inline-block;
+	width:708px;
+	margin:0 auto;
+}
+
+.defBtn{
+	display:inline-block;
+	font-family:'soup_of_justice';
+	color:#fff;
+	background:#f7bc14;
+	border-top:3px solid #ce9902;
+	border-bottom:3px solid #ffeaad;
+	text-transform:uppercase;
+	font-size:36px;
+	padding:6px 30px;
+	margin:10px;
+	border-radius:5px;
+	background-clip:padding-box;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+/*landing*/
+#landing h2{
+	display:block;
+	width:32%;
+	min-width:310px;
+	margin:0 auto;
+	margin-top:35px;
+}
+#landingLogo{
+	width:36.8%;
+	min-width:354px;
+	margin-top:30px;
+}
+.goBtn{
+	display:block;
+	width:10%;
+	min-width:88px;
+	margin:0 auto;
+	cursor:pointer;
+}
+.nestleLogo{
+	display:block;
+	width:6.67%;
+	min-width:64px;
+	margin:0 auto;
+	margin-top:50px;
+}
+
+/*personal info after login*/
+#personalData{
+	display:block;
+}
+#personalDataLogo{
+	width:25%;
+	min-width:238px;
+	margin-top:25px;
+}
+#personalDataForm{
+	
+}
+.defForm{
+	font-family:'soup_of_justice';
+	color:#f7bd14;
+	font-size:18px;
+	text-align:left;
+}
+.defInput{
+	display:block;
+	font-family:'DIN-Regular';
+	font-size:14px;
+	width:100%;
+	height:30px;
+	border:none;
+	background:#eee;
+	padding:3px;
+	box-sizing:border-box;
+}
+table td{
+	padding:3px;
+}
+
+/*game*/
+#howToPlay{
+	display:block;
+}
+#gamePlay{
+	display:none;
+}
+
+.overlay{
+	display:none;
+	background:#000;
+	width:100%;
+	height:2000px;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1;
+}
+.popup{
+	width:100%;
+}
+.closeBtn{
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../images/close-btn.png) no-repeat 0 0;
+	position:absolute;
+	top:-15px;
+	right:-15px;
+	text-indent:-9999px;
+}
+
+#howToLogo, #gameOverLogo, #shareSuccessLogo, #voucherLogo{
+	width:25%;
+	min-width:238px;
+	margin-top:25px;
+}
+.contentBox{
+	display:block;
+	width:30%;
+	min-width:286px;
+	margin:10px auto;
+	background:#fff;
+	border:5px solid #edbc16;
+	border-radius:10px;
+	background-clip:padding-box;
+	/*overflow:hidden;*/
+	box-sizing:border-box;
+	padding:10px 30px;
+	position:relative;
+}
+
+#gamePlayLogo{
+	width:14%;
+	min-width:138px;
+	margin-top:15px;
+}
+.gamePlayContainer{
+	width:90%;
+	min-width:300px;
+	max-width:600px;
+	margin:0 auto;
+}
+.gameMenu{
+	font-family:'soup_of_justice';
+	font-size:14px;
+}
+.gameMenu ul{
+	text-align:right;
+}
+.gameMenu ul li{
+	display:inline-block;
+}
+.gameMenu ul li a{
+	display:block;
+	background:#f7bc14;
+	padding:5px 10px;
+	color:#fff;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	background-clip:padding-box;
+}
+.gameArea{
+	display:block;
+	width:100%;
+	border:3px solid #fbc51d;
+	border-radius:3px;
+	border-top-right-radius:0px;
+	background-clip:padding-box;
+}
+.gameTapArea{
+	display:block;
+	width:100%;
+	overflow:hidden;
+}
+.tapContainer{
+	width:99.99%;
+	margin:0 auto;
+	height:0;
+	padding-bottom:110%;
+}
+.tapMe{
+	display:block;
+	float:left;
+	width:33.33%;
+	height:0;
+	padding-bottom:33.33%;
+	margin:0 0 10px;
+}
+.gameInfoArea{
+	display:block;
+	width:100%;
+	height:108px;
+	background:#fff;
+	font-family:'soup_of_justice';
+	color:#fff;
+	border-top:3px solid #fbc51d;
+	overflow:hidden;
+}
+.gameTimer, .gameScore, .gameLevel{
+	display:block;
+	float:left;
+	text-align:center;
+	position:relative;
+	height:100%;
+}
+.gameTimer{
+	width:22%;
+}
+.gameScore{
+	width:56%;
+}
+.gameLevel{
+	width:22%;
+}
+.timerContainer, .levelContainer{
+	display:block;
+	width:60px;
+	height:60px;
+	border:3px solid #fbc51d;
+	-moz-border-radius:60px;
+	-webkit-border-radius:60px;
+	border-radius:60px;
+	background-clip:padding-box;
+	background:#90ac4d;
+	background:-moz-linear-gradient(-45deg,  #90ac4d 0%, #90ac4d 50%, #749721 50%, #749721 100%);
+	background:-webkit-linear-gradient(-45deg,  #90ac4d 0%,#90ac4d 50%,#749721 50%,#749721 100%);
+	background:linear-gradient(135deg,  #90ac4d 0%,#90ac4d 50%,#749721 50%,#749721 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#90ac4d', endColorstr='#749721',GradientType=1 );
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-30px;
+	margin-left:-30px;
+	font-size:18px;
+}
+.scoreContainer{
+	display:block;
+	width:160px;
+	height:60px;
+	border:3px solid #749721;
+	-moz-border-radius:80px / 30px;
+ 	-webkit-border-radius:80px / 30px;
+ 	border-radius:80px / 30px;
+	background-clip:padding-box;
+	background:#fcd251;
+	background:-moz-linear-gradient(top,  #fcd251 0%, #fcd251 50%, #fbc51d 50%, #fbc51d 100%);
+	background:-webkit-linear-gradient(top,  #fcd251 0%,#fcd251 50%,#fbc51d 50%,#fbc51d 100%);
+	background:linear-gradient(to bottom,  #fcd251 0%,#fcd251 50%,#fbc51d 50%,#fbc51d 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd251', endColorstr='#fbc51d',GradientType=0 );
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-30px;
+	margin-left:-80px;
+	font-size:22px;
+}
+.levelContainer{
+	padding-top:10px;
+	line-height:18px;
+}
+#timeLeft{
+	font-size:40px;
+	line-height:54px;
+}
+#theScore{
+	font-size:28px;
+	line-height:28px;
+}
+#theLevel{}
+
+#gameOverFail, #gameOverSuccess{
+	display:none;
+}
+
+.sjoraFusionLogo{
+	display:block;
+	width:33.33%;
+	margin:20px auto 5px;
+	text-align:center;
+}
+.sjoraFusionLogo img{
+	display:block;
+}
+
+#popupDisclaimer{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:2;
+}
+#popupDisclaimer .contentBox{
+	padding:30px 30px;
+}
+
+@media screen and (max-width: 1050px){
+.defBtn{
+	font-size:32px;
+}
+}
+
+@media screen and (max-width: 990px){
+.defBtn{
+	font-size:28px;
+}
+}

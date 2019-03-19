@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sjora Quest</title>
+<link rel="stylesheet" type="text/css" href="css/fontAttach/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/sjoraquest.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+
+	<section id="shareSuccess">
+        <div id="shareSuccessLogo" class="logo"><img src="images/sjora-quest-logo.png"></div>
+        <div id="shareSuccess" class="contentBox">
+        	<h3>Share Berhasil</h3>
+            <p>
+            	Kamu bisa kembali bermain dalam
+                <br><br>
+                <div id="countDown"></div>
+                <br><br>
+            </p>
+            <a href="index.html" id="backToHomeBtn" class="defBtn">Close</a>
+            <div class="sjoraFusionLogo"><img src="images/sjora-fusion-logo.png"></div>
+        </div>
+    </section>
+    <script>
+    var backUrl = 'game.html';
+    </script>
+	<script src="js/jquery.countdown.min.js"></script>
+    <script src="js/tapMe.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+		$(document).ready(function(){
+			$("#countDown").countdown("2016/01/25 18:013:39", function(event){
+				$(this).text(event.strftime('%H:%M:%S'));
+			}).on('finish.countdown', function(event){
+				changeCloseBtn(backUrl);
+			});
+		});
+    </script>
+    
+</body>
+</html>
