@@ -3,7 +3,7 @@ class Closefb extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 	
-	}a
+	}aa
 	
 	function index(){
 		echo "<script>self.close();</script>";
